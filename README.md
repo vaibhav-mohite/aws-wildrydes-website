@@ -12,7 +12,7 @@ AWS Services Used :
 
 The Lambda function code is taken from [AWS workshop](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-3/ )
 
-The Lambda Function Code
+**The Lambda Function Code**
 
 Here is the code for the Lambda function, originally taken from the AWS workshop, and updated for Node 20.x:
 
@@ -49,7 +49,7 @@ export const handler = async (event, context) => {
         return {
             statusCode: 201,
             body: JSON.stringify({
-                RideId: rideId,
+                RideID: rideId,
                 Unicorn: unicorn,
                 Eta: '30 seconds',
                 Rider: username,
@@ -71,9 +71,9 @@ function findUnicorn(pickupLocation) {
 
 async function recordRide(rideId, username, unicorn) {
     const params = {
-        TableName: 'Rides',
+        TableName: 'wildrydes-dynamodb-table',
         Item: {
-            RideId: rideId,
+            RideID: rideId,
             User: username,
             Unicorn: unicorn,
             RequestTime: new Date().toISOString(),
@@ -103,7 +103,8 @@ function errorResponse(errorMessage, awsRequestId) {
 }
 ```
 
-The Lambda Function Test Function
+
+**The Lambda Function Test Function**
 Here is the code used to test the Lambda function:
 
 ```
