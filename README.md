@@ -2,7 +2,7 @@
 
 This a web application for a unicorn ride-sharing service called Wild Rydes ([Amazon workshop](https://aws.amazon.com/serverless-workshops)). The app will let us create an account and log in, then request a ride by clicking on a map (powered by ArcGIS).
 
-AWS Services Used :
+**AWS Services Used :**
 1. IAM
 2. Amplify
 3. Cognito
