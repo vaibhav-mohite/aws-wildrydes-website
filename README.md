@@ -1,4 +1,4 @@
-AWS Project - Build a Full End-to-End Web Application
+**AWS Project - Build a Full End-to-End Web Application**
 
 This a web application for a unicorn ride-sharing service called Wild Rydes ([Amazon workshop](https://aws.amazon.com/serverless-workshops)). The app will let us create an account and log in, then request a ride by clicking on a map (powered by ArcGIS).
 
