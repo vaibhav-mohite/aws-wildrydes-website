@@ -13,8 +13,10 @@ AWS Services Used :
 The Lambda function code is taken from [AWS workshop](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-3/ )
 
 The Lambda Function Code
+
 Here is the code for the Lambda function, originally taken from the AWS workshop, and updated for Node 20.x:
 
+```
 import { randomBytes } from 'crypto';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { DynamoDBDocumentClient, PutCommand } from '@aws-sdk/lib-dynamodb';
@@ -99,9 +101,12 @@ function errorResponse(errorMessage, awsRequestId) {
         },
     };
 }
+```
+
 The Lambda Function Test Function
 Here is the code used to test the Lambda function:
 
+```
 {
     "path": "/ride",
     "httpMethod": "POST",
@@ -121,4 +126,4 @@ Here is the code used to test the Lambda function:
     },
     "body": "{\"PickupLocation\":{\"Latitude\":47.6174755835663,\"Longitude\":-122.28837066650185}}"
 }
-
+```
