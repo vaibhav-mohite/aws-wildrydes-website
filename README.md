@@ -14,8 +14,6 @@ The Lambda function code is taken from [AWS workshop](https://aws.amazon.com/get
 
 **The Lambda Function Code**
 
-Here is the code for the Lambda function, originally taken from the AWS workshop, and updated for Node 20.x:
-
 ```
 import { randomBytes } from 'crypto';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
@@ -104,8 +102,7 @@ function errorResponse(errorMessage, awsRequestId) {
 ```
 
 
-**The Lambda Function Test Function**
-Here is the code used to test the Lambda function:
+**The Lambda Function Test Function Code**
 
 ```
 {
