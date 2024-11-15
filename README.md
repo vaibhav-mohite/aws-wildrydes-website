@@ -102,4 +102,5 @@ function errorResponse(errorMessage, awsRequestId) {
 ```
 
 **Please check “final-website-images” Folder for Images of the Application**
+
 **Please check step-by-step-guide for detailed Instructions to create the application.**
