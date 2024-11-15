@@ -101,27 +101,5 @@ function errorResponse(errorMessage, awsRequestId) {
 }
 ```
 
-
-**The Lambda Function Test Function Code**
-
-```
-{
-    "path": "/ride",
-    "httpMethod": "POST",
-    "headers": {
-        "Accept": "*/*",
-        "Authorization": "eyJraWQiOiJLTzRVMWZs",
-        "content-type": "application/json; charset=UTF-8"
-    },
-    "queryStringParameters": null,
-    "pathParameters": null,
-    "requestContext": {
-        "authorizer": {
-            "claims": {
-                "cognito:username": "the_username"
-            }
-        }
-    },
-    "body": "{\"PickupLocation\":{\"Latitude\":47.6174755835663,\"Longitude\":-122.28837066650185}}"
-}
-```
+**Please check “final-website-images” Folder for Images of the Application**
+**Please check step-by-step-guide for detailed Instructions to create the application.**
